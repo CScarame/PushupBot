@@ -10,12 +10,19 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
-        }
+        },
         {
             "name": "Python: Hello World",
             "type": "python",
             "request": "launch",
             "program": "C:/Users/CScarame/Documents/Repos/PushupBot/helloworld.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Google Handler Test",
+            "type": "python",
+            "request": "launch",
+            "program": "C:/Users/CScarame/Documents/Repos/PushupBot/googleHandler.py",
             "console": "integratedTerminal"
         }
     ]
