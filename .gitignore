@@ -1,3 +1,4 @@
 config/discord-token.json
 config/google-keys.json
 config/token.pickle
+Cogs/__pycache__

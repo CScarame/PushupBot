@@ -24,6 +24,13 @@
             "request": "launch",
             "program": "C:/Users/CScarame/Documents/Repos/PushupBot/googleHandler.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Discord Handler Test",
+            "type": "python",
+            "request": "launch",
+            "program": "C:/Users/CScarame/Documents/Repos/PushupBot/discordHandler.py",
+            "console": "integratedTerminal"
         }
     ]
 }
