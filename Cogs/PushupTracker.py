@@ -130,7 +130,7 @@ class PushupTracker(commands.Cog):
         await ctx.send(msg)
 
     @commands.command(help="Track situp shorthand")
-    async def p(self, ctx, *, number):
+    async def s(self, ctx, *, number):
         msg = ""
         self.get_labels()
 
@@ -149,7 +149,7 @@ class PushupTracker(commands.Cog):
                         [[datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S"), f"{ctx.author.id}", number,"situps"]])
 
         ## Check the total push ups done today
-        total = self.G.read(f"Pushups!{get_column_letter(self.userlist.index(f'{ctx.author.id}')+1)}{len(self.datelist)}")
-        msg += f"Added {number} pushups.\nYou have done a total of **{total[0][0]}** pushups today."
+        total = self.G.read(f"Situps!{get_column_letter(self.userlist.index(f'{ctx.author.id}')+1)}{len(self.datelist)}")
+        msg += f"Added {number} situps.\nYou have done a total of **{total[0][0]}** situpss today."
         await ctx.send(msg)
     
