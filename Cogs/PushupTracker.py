@@ -58,7 +58,7 @@ class PushupTracker(commands.Cog):
         situp_line = []
         for line in new_line:
             situp_line.append(line.replace("pushups", "situps"))
-        self.G.append(f"Situps!A:{get_column_letter(len(self.userlist))}", [new_line])
+        self.G.append(f"Situps!A:{get_column_letter(len(self.userlist))}", [situp_line])
         return
 
     @commands.command(help="Check to see how many push ups you have done today.")
