@@ -55,8 +55,9 @@ class PushupTracker(commands.Cog):
                 new_line.append(f'=SUMIFS(RawData!C:C,RawData!B:B,{get_column_letter(index+1)}$1,' + 
                 f'ArrayFormula(TO_DATE(DATEVALUE(RawData!A:A))), "="&TO_DATE($A{len(self.datelist)}) ,RawData!D:D,"=pushups")')
         self.G.append(f"Pushups!A:{get_column_letter(len(self.userlist))}", [new_line])
+        situp_line = []
         for line in new_line:
-            line.replace("pushups", "situps")
+            situp_line.append(line.replace("pushups", "situps"))
         self.G.append(f"Situps!A:{get_column_letter(len(self.userlist))}", [new_line])
         return
 
